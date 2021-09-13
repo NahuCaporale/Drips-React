@@ -9,7 +9,7 @@ const App = ( ) => {
     <body>
     <Header titulo="Drip's Land"/>
     
-    <ItemListContainer saludo="Hi, im itemlistcontainer"/>
+    <ItemListContainer saludo="Hi, im itemlistcontainer!"/>
     </body>
     </Fragment>
     )
