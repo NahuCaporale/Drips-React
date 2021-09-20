@@ -1,0 +1,21 @@
+.divBtn p{
+    font-family: sans-serif;
+    font-size: 28px;
+}
+.divBtn{
+text-align: center;
+
+}
+.btn{
+    font-size: 16px;
+    padding: 6px;
+    background-color: #B4F8C8 ;
+    color: black;
+    text-shadow: gray 0.2px 0.2px;
+    margin-right: 5px;
+    border: none;
+    border-bottom: #7CC491 2px solid;
+    border-radius: 2px;
+    cursor: pointer;
+
+}

@@ -1,18 +1,11 @@
+import Header from '../header/Header'
+import Cart from '../cartwidgt/CartWidget'
+import './nav.css'
 import { Fragment } from 'react/cjs/react.production.min'
-import Cart from './CartWidget'
-import './header.css'
-
-
-const Header = ({titulo,parrafo,id}) => {
-    return(
-
-            <Fragment>
-        <body>
-        <header className='main-header'>
-            <div className='container'>
-                <h1> {titulo} </h1>
-                <p>{parrafo}</p>
-            <nav className='main-nav'>
+const Nav = ({cart,onAdd}) =>{
+   return( 
+   <Fragment>
+   <nav className='main-nav'>
                     <ul className='main-nav-list'>
                         <li>
                             <a href="#">Home</a>
@@ -27,15 +20,10 @@ const Header = ({titulo,parrafo,id}) => {
                             <a href="#">Contacto</a>
                         </li>
                         
-                        <Cart style='color:#FFAEBC; text-decoration: none;' />
-
+                        <Cart cart={cart} onAdd={onAdd}/>
                     </ul>
                 </nav>
-            </div>
-        </header>
-        </body>
-        </Fragment>
-    )
+</Fragment>)
 }
 
-export default Header
+export default Nav

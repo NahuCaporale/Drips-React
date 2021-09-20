@@ -1,0 +1,15 @@
+.cart{
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 40px;
+    transition: color 0.3s ease;
+    color: white;
+}
+.numbercart{
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    line-height: 40px;
+
+}
