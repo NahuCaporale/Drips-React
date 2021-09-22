@@ -6,7 +6,7 @@ import ItemCont from './components/itemcont/itemcont'
 import Nav from './components/nav/nav'
 import './components/app.css'
 
-const App = ( ) => {
+const App = () => {
     const [contador,setContador]= useState(0)
     const [cart,setCart]= useState(0)
     const handleSum= () =>{
@@ -25,16 +25,17 @@ const App = ( ) => {
         setContador(0)
     }
     
-    return(
+    return(<body>
     <Fragment>
-    <body>
+    
     <Header titulo="Drip's Land"/>
     <Nav onAdd={handleAdd}cart={cart}/>
     <ItemListContainer/>
     
     <ItemCont Contador={contador} onSum={handleSum} onSubstract={handleSubs} onAdd={handleAdd}/>
-    </body>
+    
     </Fragment>
+    </body>
     )
 }
 

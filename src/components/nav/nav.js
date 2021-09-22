@@ -4,6 +4,7 @@ import './nav.css'
 import { Fragment } from 'react/cjs/react.production.min'
 const Nav = ({cart,onAdd}) =>{
    return( 
+       <body>
    <Fragment>
    <nav className='main-nav'>
                     <ul className='main-nav-list'>
@@ -23,7 +24,8 @@ const Nav = ({cart,onAdd}) =>{
                         <Cart cart={cart} onAdd={onAdd}/>
                     </ul>
                 </nav>
-</Fragment>)
+</Fragment>
+</body>)
 }
 
 export default Nav
