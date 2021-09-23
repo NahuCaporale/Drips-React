@@ -14,4 +14,4 @@ CAMBIOS
 
 ##COMMIT 3 22/09##
 
-#Cree item y itemlist y se muestran los productos con un setimeout.
+#Cree item y itemlist y se muestran los productos con un setimeout creado en itemlistcontainer.
