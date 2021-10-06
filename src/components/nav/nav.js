@@ -2,29 +2,31 @@ import Header from '../header/Header'
 import Cart from '../cartwidgt/CartWidget'
 import './nav.css'
 import { Fragment } from 'react/cjs/react.production.min'
+import { Link } from 'react-router-dom'
+
 const Nav = ({cart,onAdd}) =>{
    return( 
        <body>
-   <Fragment>
-   <nav className='main-nav'>
+    <Fragment>
+        <nav className='main-nav'>
                     <ul className='main-nav-list'>
                         <li>
-                            <a href="#">Home</a>
+                            <Link to='/'>Home</Link>
                         </li>
                         <li>
-                            <a href="#">Productos</a>
+                            <Link to='/products'>Productos</Link>
                         </li>
                         <li>
-                            <a href="#">Nosotros</a>
+                            <Link to='/contact'>Contacto</Link>
                         </li>
                         <li>
-                            <a href="#">Contacto</a>
+                            <Link to='/us'>Nosotros</Link>
                         </li>
                         
-                        <Cart cart={cart} onAdd={onAdd}/>
+                            <Cart cart={cart} onAdd={onAdd}/>
                     </ul>
-                </nav>
-</Fragment>
+        </nav>
+    </Fragment>
 </body>)
 }
 

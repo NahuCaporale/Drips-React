@@ -30,3 +30,7 @@ h1{
     flex: row wrap ;
 
 }
+.titleStyle{
+    text-decoration: none;
+    color: white;
+}

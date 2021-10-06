@@ -1,12 +1,14 @@
 import Header from './components/header/Header'
 import ItemListContainer from './components/itemlist/ItemListContainer'
-import React, { useState } from 'react'
-import { Fragment } from 'react'
+import React, { useState, Fragment } from 'react'
 import ItemCont from './components/itemcont/itemcont'
 import Nav from './components/nav/nav'
+import { BrowserRouter, Route } from 'react-router-dom'
 import './components/app.css'
+import ItemDetailContainer from './components/itemlist/Itemdetailcontainer'
 
 const App = () => {
+    //logica de contador
     const [contador,setContador]= useState(0)
     const [cart,setCart]= useState(0)
     const handleSum= () =>{
@@ -25,17 +27,23 @@ const App = () => {
         setContador(0)
     }
     
-    return(<body>
-    <Fragment>
+    return(
+
+    <BrowserRouter>
+        <body>
+            <Fragment>
+
+                <Route path='/' component={Header} />                
+                <Nav onAdd={handleAdd}cart={cart}/>
+                <ItemListContainer/>
+                <ItemDetailContainer/>
     
-    <Header titulo="Drip's Land"/>
-    <Nav onAdd={handleAdd}cart={cart}/>
-    <ItemListContainer/>
+                <ItemCont Contador={contador} onSum={handleSum} onSubstract={handleSubs} onAdd={handleAdd}/>
     
-    <ItemCont Contador={contador} onSum={handleSum} onSubstract={handleSubs} onAdd={handleAdd}/>
+            </Fragment>
+        </body>
+    </BrowserRouter>
     
-    </Fragment>
-    </body>
     )
 }
 
