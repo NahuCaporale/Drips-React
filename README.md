@@ -18,7 +18,7 @@ CAMBIOS
 
 ## CAMBIOS 4 13/10 ##
 
-# Fetch en itemdetail(me tira error)
-# Router en app
+#Fetch en itemdetail(me tira error)
+#Router en app.
 
 ![a](https://user-images.githubusercontent.com/84024396/137174222-9c3d6795-758c-45a0-a3c0-734e4c7a9aea.png)
