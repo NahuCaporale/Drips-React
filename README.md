@@ -1,6 +1,6 @@
 CAMBIOS
 
-## CAMBIOS 1 13/09##
+## CAMBIOS 1 13/09
 
 #Agregue el componente itemlistcontainer que contiene un saludo como parámetro.
 
@@ -8,11 +8,11 @@ CAMBIOS
 #Modifique el body, header y nav en sus respectivos componentes.
 
 
-## CAMBIOS 2 20/09##
+## CAMBIOS 2 20/09
 
 #Buttons para agregar mas o menos productos al carrito.
 
-## CAMBIOS 3 22/09##
+## CAMBIOS 3 22/09
 
 #Cree item y itemlist y se muestran los productos con un setimeout creado en itemlistcontainer.
 
