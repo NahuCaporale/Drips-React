@@ -12,7 +12,7 @@ const Header = () => {
             <Fragment>
         <header className='main-header'>
             <div className='container'>
-                <h1><Link className='titleStyle' to='/'> Drip's Land </Link></h1>
+                <h1><Link className='titleStyle' to='/'> Drip's Land E-Commerce </Link></h1>
             </div>
         </header>
         </Fragment>
